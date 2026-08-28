@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+ <!-- ============ ABOUT HERO ============ -->
+
+<section
+    class="relative bg-black h-[320px] flex items-center overflow-hidden
+           bg-cover bg-center py-6
+           bg-[url('/static/images/aboutus_bg.png')]"
+>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Gold background glow -->
+    <div
+        class="absolute inset-0 opacity-20
+        bg-[radial-gradient(circle_at_20%_50%,rgba(190,148,72,0.4),transparent_60%)]">
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full text-center">
+
+    <h1 class="text-3xl md:text-4xl font-light tracking-wide text-white">
+        ABOUT BUDGET FOODS
+    </h1>
+
+    <div class="w-16 h-[3px] bg-white mt-4 mx-auto"></div>
+
+</div>
+
+</section>
+
+  <!-- ============ WE CREATE BETTER LIFE TOGETHER ============ -->
+  <section class="bg-[#1c1c1c] py-16">
+    <div class="mx-auto px-6">
+
+    <h2 class="text-2xl md:text-3xl text-center text-white font-semibold tracking-wide mb-8">
+        WE CREATE A BETTER LIFE TOGETHER
+    </h2>
+
+    <p class="text-gray-300 text-sm leading-relaxed mb-5">
+        Since its inception in 2004 by K.P. Basheer, Budgetfoods has steadily grown to become a preferred choice among customers. With a growing presence across the India,Kerala, we continue to strengthen our position as a trusted and rapidly expanding retail chain.
+    </p>
+
+    <p class="text-gray-300 text-sm leading-relaxed mb-5">
+        Budgetfoods continues to expand its retail presence, offering customers a wide range of quality products at exceptional value. Our customer-centric approach and dedicated team have established Budgetfoods as a trusted destination for modern shoppers who seek value without compromising on quality.
+    </p>
+
+    <p class="text-gray-300 text-sm leading-relaxed">
+        A significant proportion of our customers are repeat visitors, reflecting their trust in our commitment to quality, affordability, and service. With an extensive range of products across multiple categories, Budgetfoods continues to strengthen its position as a leading value-focused retailer.
+    </p>
+
+</div>
+
+    <!-- Hero image -->
+    <div class="max-w-7xl mx-auto px-6 mt-12">
+      <div class="w-full h-[380px] rounded overflow-hidden bg-gradient-to-b from-[#2a2a2a] to-[#111] flex items-center justify-center text-gray-500">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&h=500&fit=crop" alt="Nesto hypermarket produce aisle" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <div class=" mx-auto px-6 mt-10">
+      <p class="text-gray-300 text-sm leading-relaxed mb-4">
+        Budgetfoods is more than a Store; we cultivate lasting relationships built on trust, reliability, and satisfaction. Our success is measured not only by sales figures but by the smiles on our customers' faces and the trust they place in us with each visit.      </p>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        Join us at Budgetfoods, where quality meets affordability, and every shopping experience is a testament to our dedication to exceeding expectations.      </p>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="bg-[#141414] py-10 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+      <div>
+        <p class="text-gray-400 text-sm mb-1">Workforce</p>
+        <p class="text-2xl font-semibold text-gold">24000+</p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm mb-1">Happy Customers</p>
+        <p class="text-2xl font-semibold text-gold">6 M</p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm mb-1">Shopping Area Sqft</p>
+        <p class="text-2xl font-semibold text-gold">8 M</p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm mb-1">Outlets</p>
+        <p class="text-2xl font-semibold text-gold">148</p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm mb-1">Upcoming Projects</p>
+        <p class="text-2xl font-semibold text-gold">10+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAIRMAN'S MESSAGE ============ -->
+  <section class="bg-[#1c1c1c] py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-[#111] rounded-md p-8 md:p-12 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h3 class="text-xl font-semibold mb-6 tracking-wide">CHAIRMAN'S MESSAGE</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          I firmly believe that every success story begins with a humble dream. With determination, dedication, and perseverance, those dreams can one day become a reality. Like many others, my dream of establishing a successful business in the Kingdom of Bahrain has become a reality, supported by our dedicated employees and multiple investments in the pipeline. I would like to take this opportunity to express my sincere gratitude to our dedicated and committed workforce, comprising personnel from over a dozen nations, whose hard work and dedication have played a vital role in this remarkable achievement.At Budgetfoods, we strongly believe that our success is built on the unwavering trust and support of hundreds of thousands of customers. Our journey has evolved into a growing business enterprise, and we are proud to be recognized as a trusted name in the retail industry.
+
+          With ambitious plans for further expansion and reaching more communities, we look forward to entering the next phase of our growth. We remain committed to continuing this fruitful journey and building upon our success story.
+
+          We will continue to strengthen our unique offerings, providing our customers with quality products, affordability, convenience, and a complete shopping experience supported by an efficient and seamless delivery system.          </p>
+          <p class="text-gray-300 text-sm font-medium">Thanking You</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-64 h-72 rounded-t-full overflow-hidden bg-gold/20 border-2 border-gold">
+          <img
+              src="{% static 'images/owners/basheer-kp-1.jpg' %}"
+              alt="K.P. Basheer"
+              class="w-full h-full object-cover"
+            />         
+        </div>
+          <p class="mt-4 font-semibold">K P Basheer</p>
+          <p class="text-gray-400 text-sm">Founder, Chairman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIRECTOR'S MESSAGE ============ -->
+  <section class="bg-[#111] py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div class="flex gap-6">
+        <div class="flex flex-col items-center">
+          <div class="w-36 h-44 bg-gold/20 border border-gold overflow-hidden">
+            <img
+                src="{% static 'images/owners/Muneer.jpeg' %}"
+                alt="K.P. Basheer"
+                class="w-full h-full object-cover"
+            />       
+            </div>
+          <p class="mt-3 font-semibold text-sm text-center">Muneer Palollathil</p>
+          <p class="text-gray-400 text-xs">MANAGING DIRECTOR</p>
+        </div>
+        <div class="flex flex-col items-center mt-10">
+          <div class="w-36 h-44 bg-gold/20 border border-gold overflow-hidden">
+                <img
+                  src="{% static 'images/owners/asif.jpeg' %}"
+                  alt="K.P. Basheer"
+                  class="w-full h-full object-cover object-[45%_20%]"
+                />          
+          </div>
+          <p class="mt-3 font-semibold text-sm text-center">Asif ETK</p>
+          <p class="text-gray-400 text-xs">MANAGING DIRECTOR</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-5 tracking-wide">DIRECTOR'S MESSAGE</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          We take pride in offering a wide range of quality products at unbeatable value. Step into our thoughtfully designed retail spaces, where shopping becomes a relaxing, convenient, and rewarding experience. Whether you're looking for everyday essentials, fresh groceries, household products, fashion, or the latest technology, we have something for everyone. This commitment is reflected in the Budgetfoods promise: “All That You Need.”        </p>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          What sets us apart is our dedication to delivering a complete shopping experience, combined with exceptional customer service that goes above and beyond expectations. Our relentless pursuit of customer satisfaction has helped us set high standards in the retail industry and continually inspires us to improve and innovate.        </p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          As a result, Budgetfoods has become synonymous with quality, value, and reliability, earning the trust and preference of customers from diverse backgrounds and communities.        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISION ============ -->
+  <section class="bg-[#1c1c1c] py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold mb-6 text-white">Our vision</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          At Budgetfoods, we are driven by a clear vision: to become your favorite one-stop shopping destination. We strive to create vibrant, welcoming stores filled with everything you need, making your shopping experience convenient, enjoyable, and affordable, with unbeatable value every day.        </p>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          We are constantly evolving and improving our stores by embracing the latest technologies, innovative solutions, and efficient logistics to make your shopping experience even better. Our goal is to become a trusted destination for all your everyday needs while setting new standards in the retail industry.        </p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Join us on this exciting journey as we work towards creating a brighter, smarter, and more convenient shopping experience for everyone.        </p>
+      </div>
+      <div class="h-80 rounded overflow-hidden">
+                <img
+                  src="{% static 'images/mission.png' %}"
+                  alt="K.P. Basheer"
+                  class="w-full h-full object-cover"
+                />         
+        </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section class="bg-[#141414] py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div class="h-80 rounded overflow-hidden order-2 md:order-1">
+                <img
+                  src="{% static 'images/vision.png' %}"
+                  alt="vision"
+                  class="w-full h-full object-cover"
+                />        </div>
+      <div class="order-1 md:order-2">
+        <h3 class="text-2xl font-semibold mb-6 text-white ">Our mission</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+        </p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          At Budgetfoods, we are on a mission to transform your shopping experience. Our commitment is simple: to offer a diverse range of quality products that meet your everyday needs, while ensuring convenience, value, and satisfaction with every visit. With a strong focus on affordability, we strive to make everyday essentials and premium products accessible to everyone. From daily necessities to indulgent treats, we have everything you need at prices that offer exceptional value without compromising on quality.                                   
+          Join us as we continue to redefine the retail experience and make shopping at Budgetfoods more convenient, enjoyable, and rewarding for everyone.        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CSR ============
+  <section class="relative py-16">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1600&h=500&fit=crop" alt="Helping hands" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-6">
+      <h3 class="text-xl md:text-2xl font-semibold mb-5 leading-snug">
+        HELPING HANDS FOR THE NEEDFUL THROUGH<br class="hidden md:block" /> OUR CSR INITIATIVES
+      </h3>
+      <p class="text-gray-200 text-sm leading-relaxed mb-6 max-w-2xl">
+        At Nesto Hypermarket, we are committed to making a positive impact through our Corporate Social Responsibility (CSR) initiatives. Through partnerships and community outreach programs, we extend helping hands to those in need, supporting causes related to education, healthcare, and empowerment. Together, we strive to create a better future and make a meaningful difference in the lives of individuals and communities.
+      </p>
+      <button class="bg-gold text-black text-xs font-semibold tracking-wide px-6 py-3 rounded-sm hover:bg-white transition">
+        KNOW MORE
+      </button>
+    </div>
+  </section> -->
+
+  
+</body>
+{% endblock %}

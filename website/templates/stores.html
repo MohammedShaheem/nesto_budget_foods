@@ -1,0 +1,439 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===================== HERO ===================== -->
+<section
+    class="relative bg-black h-[320px] flex items-center overflow-hidden
+           bg-cover bg-center py-6
+           bg-[url('/static/images/aboutus_bg.png')]"
+>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Gold background glow -->
+    <div
+        class="absolute inset-0 opacity-20
+        bg-[radial-gradient(circle_at_20%_50%,rgba(190,148,72,0.4),transparent_60%)]">
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full text-center">
+
+    <h1 class="text-3xl md:text-4xl font-light tracking-wide text-white">
+        STORES
+    </h1>
+
+    <div class="w-16 h-[3px] bg-white mt-4 mx-auto"></div>
+
+</div>
+
+</section>
+
+<!-- ============ FILTER BAR ============
+<section class="bg-neutral-800 py-9 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+
+    <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+      <label for="localitySelect" class="text-white text-sm sm:text-base whitespace-nowrap">Choose locality</label>
+      <div class="relative">
+        <select id="localitySelect" class="appearance-none bg-nesto-cream text-gray-900 text-sm font-medium rounded-full pl-6 pr-11 py-3 min-w-[220px] focus:outline-none cursor-pointer">
+          <option>Kozhikode</option>
+        </select>
+        <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0l-4.24-4.5a.75.75 0 01.02-1.06z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+{% load static %}
+
+<!-- ============ STORE LISTING ============ -->
+<section class="bg-black px-4 sm:px-6 lg:px-8 py-10">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white">
+                OUR STORES
+            </h2>
+
+            <div class="w-12 h-[2px] bg-[#BE9448] mt-3"></div>
+        </div>
+
+
+        <!-- Store Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store1.png' %}"
+                    alt="Budgetfoods"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Hilite Mall
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Kozhikode, Kerala, India
+
+                </p>
+            </div>
+
+        </div>
+
+
+            <!-- Store 2 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store2.png' %}"
+                    alt="Budgetfoods Al Kharj"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Gokulam Mall
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Kozhikode, Kerala, India
+                </p>
+            </div>
+
+        </div>
+
+
+
+            <!-- Store 3 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store3.png' %}"
+                    alt="Budgetfoods Al Kharj"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Kalpetta
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Wayanad, Kerala, India
+                </p>
+            </div>
+
+        </div>
+
+
+
+            <!-- Store 4 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store4.png' %}"
+                    alt="Budgetfoods Al Kharj"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Thrissur
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Kerala, India
+
+                </p>
+            </div>
+
+        </div>
+
+
+
+            <!-- Store 5 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store5.png' %}"
+                    alt="Budgetfoods Al Kharj"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Tirur
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Malappuram, Kerala, India
+
+                </p>
+            </div>
+
+        </div>
+
+
+
+            <!-- Store 6 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+            <!-- Image -->
+            <div class="w-full h-40 overflow-hidden bg-black">
+                <img
+                    src="{% static 'images/store6.png' %}"
+                    alt="Budgetfoods Al Kharj"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-[#BE9448] font-semibold text-base">
+                    Budgetfoods Nesto Perinthalmanna
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                    Malappuram, Kerala, India
+
+                </p>
+            </div>
+
+        </div>
+
+
+
+            <!-- Store 7 -->
+            <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store7.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Kottakkal
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Malappuram, Kerala, India
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store8.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Kannur
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Kerala, India
+
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store9.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Edappal
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                     Malappuram, Kerala, India
+
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store10.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Blue Diamond Mall
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Kozhikode, Kerala, India
+
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store11.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Kakkattil
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Kozhikode, Kerala, India
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store12.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Pattambi
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Palakkad, Kerala, India
+
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store13.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto VK Mall
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                     Perinthalmanna, Malappuram, Kerala, India
+
+
+                  </p>
+              </div>
+
+            </div>
+
+             <div class="border border-white/10 bg-[#111111] rounded-md overflow-hidden">
+
+              <!-- Image -->
+              <div class="w-full h-40 overflow-hidden bg-black">
+                  <img
+                      src="{% static 'images/store14.png' %}"
+                      alt="Budgetfoods Al Kharj"
+                      class="w-full h-full object-cover"
+                  >
+              </div>
+
+              <div class="p-4">
+                  <h3 class="text-[#BE9448] font-semibold text-base">
+                      Budgetfoods Nesto Kottakkal
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                      Malappuram, Kerala, India
+
+                  </p>
+              </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static %}
+
+<header class="fixed top-0 left-0 w-full z-50 bg-[#BE9448] border-b">
+
+    <div class="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-3">
+
+        <!-- Logo -->
+        <a href="{% url 'home' %}" class="flex items-center ">
+            <img
+                src="{% static 'images/logo.jpeg' %}"
+                alt="Budgetfoods"
+                class="h-12 w-auto object-contain"
+            >
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-normal">
+
+            <a
+                href="{% url 'home' %}"
+                class="font-bold text-white hover:text-black transition duration-200"
+            >
+                HOME
+            </a>
+
+            <a
+                href="{% url 'aboutus' %}"
+                class="text-white hover:text-black transition duration-200"
+            >
+                ABOUT US
+            </a>
+
+            <a
+                href="{% url 'family' %}"
+                class="text-white hover:text-black transition duration-200"
+            >
+                FAMILY
+            </a>
+
+            <a
+                href="{% url 'stores' %}"
+                class="text-white hover:text-black transition duration-200"
+            >
+                STORES
+            </a>
+
+            <a
+                href="{% url 'news' %}"
+                class="text-white hover:text-black transition duration-200"
+            >
+                NEWS
+            </a>
+
+            <a
+                href="{% url 'contactus' %}"
+                class="text-white hover:text-black transition duration-200"
+            >
+                CONTACT US
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>

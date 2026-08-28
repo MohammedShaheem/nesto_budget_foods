@@ -1,0 +1,878 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===================== HERO ===================== -->
+<section
+    class="relative bg-black h-[320px] flex items-center overflow-hidden
+           bg-cover bg-center py-6
+           bg-[url('/static/images/aboutus_bg.png')]"
+>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Gold background glow -->
+    <div
+        class="absolute inset-0 opacity-20
+        bg-[radial-gradient(circle_at_20%_50%,rgba(190,148,72,0.4),transparent_60%)]">
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full text-center">
+
+    <h1 class="text-3xl md:text-4xl font-light tracking-wide text-white">
+        NEWS
+    </h1>
+
+    <div class="w-16 h-[3px] bg-white mt-4 mx-auto"></div>
+
+</div>
+
+</section>
+
+
+
+<!-- ===================== TABS ===================== -->
+<div class="bg-black">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-1">
+
+        <!-- Center tabs -->
+        <div
+            class="flex flex-wrap justify-center"
+            id="tabGroup"
+        >
+
+            <!-- NEWS -->
+            <button
+                type="button"
+                data-tab="news"
+                class="tab-btn bg-gold text-white
+                       px-6 sm:px-8 py-4
+                       text-xs sm:text-sm
+                       font-bold tracking-wide
+                       transition-all duration-300"
+            >
+                News &amp; Events
+            </button>
+
+
+            <!-- PHOTO -->
+            <button
+                type="button"
+                data-tab="photo"
+                class="tab-btn bg-white text-gray-900
+                       px-6 sm:px-8 py-4
+                       text-xs sm:text-sm
+                       font-bold tracking-wide
+                       ml-[2px]
+                       transition-all duration-300"
+            >
+                Photo Gallery
+            </button>
+
+
+            <!-- VIDEO -->
+            <button
+                type="button"
+                data-tab="video"
+                class="tab-btn bg-white text-gray-900
+                       px-6 sm:px-8 py-4
+                       text-xs sm:text-sm
+                       font-bold tracking-wide
+                       ml-[2px]
+                       transition-all duration-300"
+            >
+                Video Gallery
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ===================== TAB CONTENT ===================== -->
+<div class="bg-black">
+
+
+    <!-- ================================================= -->
+    <!-- NEWS & EVENTS -->
+    <!-- ================================================= -->
+
+    <section
+        id="news"
+        class="tab-content px-4 sm:px-6 lg:px-8 py-12"
+    >
+
+        <div
+            id="newsGrid"
+            class="max-w-7xl mx-auto
+                   grid grid-cols-1
+                   sm:grid-cols-2
+                   lg:grid-cols-3
+                   gap-x-8
+                   gap-y-12"
+        >
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- PHOTO GALLERY -->
+    <!-- ================================================= -->
+
+    <section
+        id="photo"
+        class="tab-content hidden px-4 sm:px-6 lg:px-8 py-12"
+    >
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2
+                class="text-white text-2xl md:text-3xl
+                       font-semibold text-center mb-10"
+            >
+                PHOTO GALLERY
+            </h2>
+
+
+            <div
+                class="grid grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                gap-6"
+            >
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-1.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-2.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-3.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-4.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-5.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-6.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+                
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-7.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="overflow-hidden rounded-md group">
+                    <img
+                        src="{% static 'images/images/img-8.jpg' %}"
+                        alt="Nesto Photo Gallery"
+                        class="w-full h-64 object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500"
+                        loading="lazy"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== VIDEO GALLERY ===================== -->
+<section
+    id="video"
+    class="tab-content hidden bg-[#1c1c1c] px-4 sm:px-6 lg:px-8 py-12"
+>
+    <div class="w-full">
+
+        <h2
+            class="text-white text-2xl md:text-3xl
+                   font-semibold text-center mb-12"
+        >
+            VIDEO GALLERY
+        </h2>
+
+
+        <!-- Video Grid -->
+        <div
+            class="grid grid-cols-1
+                   sm:grid-cols-2
+                   lg:grid-cols-4
+                   gap-6"
+        >
+
+            <!-- VIDEO 1 -->
+            <div
+                class="relative aspect-video overflow-hidden
+                       bg-black cursor-pointer group"
+                onclick="openVideo('7SbMoFoe4wA')"
+            >
+
+                <img
+                    src="https://img.youtube.com/vi/7SbMoFoe4wA/hqdefault.jpg"
+                    alt="Nesto Video"
+                    class="w-full h-full object-cover
+                           group-hover:scale-105
+                           transition-transform duration-500"
+                >
+
+                <!-- Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/10
+                           group-hover:bg-black/30 transition"
+                ></div>
+
+                <!-- Play Button -->
+                <div
+                    class="absolute inset-0
+                           flex items-center justify-center"
+                >
+                    <div
+                        class="w-16 h-12 bg-red-600
+                               rounded-xl
+                               flex items-center justify-center
+                               group-hover:scale-110
+                               transition"
+                    >
+                        <svg
+                            class="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 2 -->
+            <div
+                class="relative aspect-video overflow-hidden
+                       bg-black cursor-pointer group"
+                onclick="openVideo('VIDEO_ID')"
+            >
+
+                <img
+                    src="https://img.youtube.com/vi/eP7p6thB8_0/hqdefault.jpg"
+                    alt="Nesto Video"
+                    class="w-full h-full object-cover
+                           group-hover:scale-105
+                           transition-transform duration-500"
+                >
+
+                <div
+                    class="absolute inset-0 bg-black/10
+                           group-hover:bg-black/30 transition"
+                ></div>
+
+                <div
+                    class="absolute inset-0
+                           flex items-center justify-center"
+                >
+                    <div
+                        class="w-16 h-12 bg-red-600
+                               rounded-xl
+                               flex items-center justify-center
+                               group-hover:scale-110
+                               transition"
+                    >
+                        <svg
+                            class="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 3 -->
+            <div
+                class="relative aspect-video overflow-hidden
+                       bg-black cursor-pointer group"
+                onclick="openVideo('VIDEO_ID')"
+            >
+
+                <img
+                    src="https://img.youtube.com/vi/7fvKWPIIfYw/hqdefault.jpg"
+                    alt="Nesto Video"
+                    class="w-full h-full object-cover
+                           group-hover:scale-105
+                           transition-transform duration-500"
+                >
+
+                <div
+                    class="absolute inset-0 bg-black/10
+                           group-hover:bg-black/30 transition"
+                ></div>
+
+                <div
+                    class="absolute inset-0
+                           flex items-center justify-center"
+                >
+                    <div
+                        class="w-16 h-12 bg-red-600
+                               rounded-xl
+                               flex items-center justify-center
+                               group-hover:scale-110
+                               transition"
+                    >
+                        <svg
+                            class="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 4 -->
+            <div
+                class="relative aspect-video overflow-hidden
+                       bg-black cursor-pointer group"
+                onclick="openVideo('VIDEO_ID')"
+            >
+
+                <img
+                    src="https://img.youtube.com/vi/qUu8W_IKIl8/hqdefault.jpg"
+                    alt="Nesto Video"
+                    class="w-full h-full object-cover
+                           group-hover:scale-105
+                           transition-transform duration-500"
+                >
+
+                <div
+                    class="absolute inset-0 bg-black/10
+                           group-hover:bg-black/30 transition"
+                ></div>
+
+                <div
+                    class="absolute inset-0
+                           flex items-center justify-center"
+                >
+                    <div
+                        class="w-16 h-12 bg-red-600
+                               rounded-xl
+                               flex items-center justify-center
+                               group-hover:scale-110
+                               transition"
+                    >
+                        <svg
+                            class="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</div>
+
+
+<!-- ===================== VIDEO MODAL ===================== -->
+
+<div
+    id="videoModal"
+    class="fixed inset-0 z-[9999]
+           hidden
+           bg-black/80
+           flex items-center justify-center
+           p-4"
+    onclick="closeVideo(event)"
+>
+
+    <!-- Close Button -->
+    <button
+        type="button"
+        onclick="closeVideo()"
+        class="absolute top-5 right-6
+               text-white text-4xl
+               font-light
+               hover:text-[#BE9448]
+               transition
+               z-[10000]"
+        aria-label="Close video"
+    >
+        &times;
+    </button>
+
+
+    <!-- Video -->
+    <div
+        class="relative w-full
+               max-w-[1260px]
+               aspect-video
+               bg-black
+               shadow-2xl"
+        onclick="event.stopPropagation()"
+    >
+
+        <iframe
+            id="videoPlayer"
+            class="absolute inset-0
+                   w-full h-full"
+            src=""
+            title="Nesto Video"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer;
+                   autoplay;
+                   clipboard-write;
+                   encrypted-media;
+                   gyroscope;
+                   picture-in-picture;
+                   web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+<!-- ===================== TAB ANIMATION ===================== -->
+
+<style>
+
+    .tab-content.tab-active {
+        animation: tabFadeIn 0.45s ease forwards;
+    }
+
+
+    @keyframes tabFadeIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
+</style>
+
+
+<!-- ===================== JAVASCRIPT ===================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const tabButtons = document.querySelectorAll(".tab-btn");
+
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    const newsGrid = document.getElementById("newsGrid");
+
+
+    /* =====================================================
+       TAB SWITCHING
+    ===================================================== */
+
+    function switchTab(targetTab) {
+
+
+        /*
+         * Change active button
+         */
+
+        tabButtons.forEach(function (button) {
+
+            const isActive =
+                button.dataset.tab === targetTab;
+
+
+            if (isActive) {
+
+                button.classList.remove(
+                    "bg-white",
+                    "text-gray-900"
+                );
+
+                button.classList.add(
+                    "bg-gold",
+                    "text-white"
+                );
+
+            } else {
+
+                button.classList.remove(
+                    "bg-gold",
+                    "text-white"
+                );
+
+                button.classList.add(
+                    "bg-white",
+                    "text-gray-900"
+                );
+
+            }
+
+        });
+
+
+        /*
+         * Hide all content
+         */
+
+        tabContents.forEach(function (content) {
+
+            content.classList.add("hidden");
+
+            content.classList.remove("tab-active");
+
+        });
+
+
+        /*
+         * Show selected content
+         */
+
+        const selectedContent =
+            document.getElementById(targetTab);
+
+
+        if (selectedContent) {
+
+            selectedContent.classList.remove("hidden");
+
+            /*
+             * Force browser to restart animation
+             */
+            void selectedContent.offsetWidth;
+
+            selectedContent.classList.add("tab-active");
+
+        }
+
+    }
+    
+
+    /* =====================================================
+       TAB CLICK EVENTS
+    ===================================================== */
+
+    tabButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const targetTab =
+                button.dataset.tab;
+
+            switchTab(targetTab);
+
+        });
+
+    });
+
+
+    /* =====================================================
+       NEWS & EVENTS DATA
+    ===================================================== */
+
+    const newsItems = [
+
+        {
+            img: "{% static 'images/news/news-image-1.jpg' %}",
+            title: "Nesto Group supports '1 Billion Meals Endowment' campaign wit...",
+            date: "December 26, 2023"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-2.jpg' %}",
+            title: "Nesto unveils 100th store",
+            date: "December 26, 2023"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-3.jpg' %}",
+            title: "Nesto Introduces Wallet Option on Inaam App for Instant Rewards",
+            date: "March 18, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-4.jpg' %}",
+            title: "Nesto Partners with Tabby to Offer Convenient Pay in 4 Option",
+            date: "March 18, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-5.jpg' %}",
+            title: "Nesto Hypermarket Celebrates 126th Philippine Independence...",
+            date: "June 24, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/New-image-6.jpg' %}",
+            title: "Nesto Hypermarket Celebrates Successful Tropicool Festival",
+            date: "July 5, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-7.jpg' %}",
+            title: "Nesto Group UAE Wins Large Retailer of the Year",
+            date: "September 25, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-8.jpg' %}",
+            title: "Nesto Hypermarket Celebrates Successful Participation",
+            date: "September 25, 2024"
+        },
+
+        {
+            img: "{% static 'images/news/news-image-9.jpg' %}",
+            title: "Nesto Hypermarket opens 129th outlet, Bilad Mall in Oman",
+            date: "September 30, 2024"
+        },
+
+        
+    ];
+
+
+    /* =====================================================
+       RENDER NEWS
+    ===================================================== */
+
+    if (newsGrid) {
+
+        newsGrid.innerHTML = newsItems
+            .map(function (item) {
+
+                return `
+
+                    <article class="group cursor-pointer">
+
+                        <div class="overflow-hidden rounded-md">
+
+                            <img
+                                src="${item.img}"
+                                alt="${item.title}"
+                                class="w-full
+                                       aspect-[8/5]
+                                       object-cover
+                                       group-hover:scale-105
+                                       transition-transform
+                                       duration-500"
+                                loading="lazy"
+                            />
+
+                        </div>
+
+
+                        <h3
+                            class="text-white
+                                   font-semibold
+                                   text-[15px]
+                                   sm:text-base
+                                   mt-4
+                                   leading-snug
+                                   line-clamp-2
+                                   group-hover:text-gold
+                                   transition-colors"
+                        >
+                            ${item.title}
+                        </h3>
+
+
+                        <div
+                            class="flex items-center
+                                   justify-between
+                                   mt-3"
+                        >
+
+                            <span class="text-gray-500 text-[13px]">
+                                ${item.date}
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-red-600
+                                       text-[13px]
+                                       font-bold
+                                       inline-flex
+                                       items-center
+                                       gap-1.5"
+                            >
+                                Read More
+
+                                <span
+                                    class="transition-transform
+                                           group-hover:translate-x-1"
+                                >
+                                    &rarr;
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                `;
+
+            })
+            .join("");
+
+    }
+
+
+    
+    
+
+    switchTab("news");
+
+
+});
+
+
+function openVideo(videoId) {
+
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("videoPlayer");
+
+    // Set YouTube video
+    player.src =
+        "https://www.youtube.com/embed/" +
+        videoId +
+        "?autoplay=1&rel=0";
+
+    // Show modal
+    modal.classList.remove("hidden");
+
+    // Prevent background scrolling
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeVideo(event) {
+
+    // If clicking inside the video container, don't close
+    if (
+        event &&
+        event.target !== document.getElementById("videoModal")
+    ) {
+        return;
+    }
+
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("videoPlayer");
+
+    // Stop video
+    player.src = "";
+
+    // Hide modal
+    modal.classList.add("hidden");
+
+    // Enable scrolling again
+    document.body.style.overflow = "";
+}
+
+
+// Close with ESC key
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeVideo();
+    }
+
+});
+
+
+
+</script>
+
+{% endblock %}

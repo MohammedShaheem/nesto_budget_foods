@@ -1,0 +1,534 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===================== HERO ===================== -->
+<section
+    class="relative h-[420px] flex items-center justify-center overflow-hidden
+           bg-cover bg-center
+           bg-[url('/static/images/home_hero_img.png')]"
+>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10">
+        <!-- Add your hero text/content here if needed -->
+    </div>
+
+</section>
+
+<!-- ===================== WE CREATE BETTER LIFE ===================== -->
+<section class="bg-[#1c1c1c] py-16 text-center border-b border-white/5">
+  <div class="mx-auto px-6">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-wide mb-6 text-white">WE CREATE BETTER LIFE TOGETHER</h2>
+    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+      Budget Foods is committed to making quality food and everyday essentials accessible to everyone, offering a wide range of products at competitive prices to meet the needs of modern customers.
+
+      With a customer-focused approach and a dedicated team, Budget Foods strives to create a convenient and reliable shopping experience, becoming a trusted destination for customers seeking great value without compromising on quality.
+    </p>
+    <a href="{% url 'aboutus' %}" class="btn-gold">READ MORE</a>
+  </div>
+
+  <div class="max-w-6xl mx-auto mt-14 px-6 grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+    <div>
+      <p class="text-gray-400 text-xs mb-1">Workforce</p>
+      <p class="text-xl font-semibold">24000+</p>
+    </div>
+    <div>
+      <p class="text-gray-400 text-xs mb-1">Happy Customers</p>
+      <p class="text-xl font-semibold">6 M</p>
+    </div>
+    <div>
+      <p class="text-gray-400 text-xs mb-1">Shopping Area Sqft</p>
+      <p class="text-xl font-semibold">8 M</p>
+    </div>
+    <div>
+      <p class="text-gray-400 text-xs mb-1">Outlets</p>
+      <p class="text-xl font-semibold">148</p>
+    </div>
+    <div>
+      <p class="text-gray-400 text-xs mb-1">Upcoming Projects</p>
+      <p class="text-xl font-semibold">10+</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUILT FROM A SINGLE VISION ===================== -->
+<section class="bg-[#161616] py-16 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-semibold leading-snug mb-5 text-white">BUILT FROM A<br>SINGLE VISION</h2>
+      <p class="text-gray-400 text-sm leading-relaxed">
+            Our visionary, dynamic and hands-on leadership guides Budget Foods
+            through every milestone. Constant innovators, Mr. Muneer Palollathil
+            &amp; Mr. Asif ETK, have spearheaded the growth of Budget Foods
+            across different regions with their conviction and passion for excellence.
+            They lead by example and inspire a culture of integrity.
+        </p>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+
+  <!-- Chairman -->
+  <div class="text-center">
+    <div class="w-full aspect-[3/4] rounded-md mb-3 overflow-hidden bg-gray-700">
+      <img
+        src="{% static 'images/owners/basheer-kp-1.jpg' %}"
+        alt="K.P. Basheer"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <p class="text-xs font-semibold tracking-wide">K.P. BASHEER</p>
+    <p class="text-[10px] text-gray-400">CHAIRMAN</p>
+  </div>
+
+  <!-- Managing Director -->
+  <div class="text-center">
+    <div class="w-full aspect-[3/4] rounded-md mb-3 overflow-hidden bg-gray-700">
+      <img
+        src="{% static 'images/owners/Muneer.jpEg' %}"
+        alt="Muneer Palollathil"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <p class="text-xs font-semibold tracking-wide">MUNEER PALOLLATHIL</p>
+    <p class="text-[10px] text-gray-400">MANAGING DIRECTOR</p>
+  </div>
+
+  <!-- Managing Director -->
+  <div class="text-center">
+    <div class="w-full aspect-[3/4] rounded-md mb-3 overflow-hidden bg-gray-700">
+      <img
+        src="{% static 'images/owners/asif.jpeg' %}"
+        alt="ASIF ETK"
+        class="w-full h-full object-cover object-[45%_20%]"
+      />
+    </div>
+
+    <p class="text-xs font-semibold tracking-wide">ASIF ETK</p>
+    <p class="text-[10px] text-gray-400">MANAGING DIRECTOR</p>
+  </div>
+
+</div>
+  </div>
+</section>
+
+<!-- ===================== OUR BRANDS ===================== -->
+<section class="bg-[#1c1c1c] py-16 text-center border-b border-white/5 overflow-hidden">
+
+    <h2 class="text-2xl text-white md:text-3xl font-semibold tracking-wide mb-10">
+        OUR BRANDS
+    </h2>
+
+    <!-- Slider -->
+    <div class="relative max-w-6xl mx-auto px-6">
+
+        <div class="overflow-hidden">
+            <div
+                id="brandSlider"
+                class="flex transition-transform duration-700 ease-in-out"
+            >
+
+                <!-- Slide 1 -->
+                <div class="min-w-full flex items-center justify-center gap-10">
+                    <span class="text-lg font-semibold text-white">Last Chance</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="italic font-serif text-lg text-white">tasty notes</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-lg font-semibold text-white">GALA</span>
+                    <span class="text-lg font-semibold text-white">YES Mobile</span>
+                    <span class="text-gray-500">|</span>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="min-w-full flex items-center justify-center gap-10">
+                    
+                    <span class="text-lg font-semibold text-white">FUN2DAY</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-lg font-semibold text-white">Last Chance</span>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="min-w-full flex items-center justify-center gap-10">
+                    <span class="italic font-serif text-lg text-white">tasty notes</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-lg font-semibold text-white">GALA</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-lg font-semibold text-white">YES Mobile</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Previous button -->
+        <!-- <button
+            onclick="previousBrand()"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   w-10 h-10 rounded-full
+                   border border-white/20
+                   text-white hover:bg-white hover:text-black
+                   transition"
+        >
+            &#10094;
+        </button> -->
+
+        <!-- Next button -->
+        <!-- <button
+            onclick="nextBrand()"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   w-10 h-10 rounded-full
+                   border border-white/20
+                   text-white hover:bg-white hover:text-black
+                   transition"
+        >
+            &#10095;
+        </button> -->
+
+    </div>
+
+    <!-- Slider dots -->
+    <!-- <div class="flex justify-center gap-2 mt-8">
+
+        <button
+            onclick="goToBrand(0)"
+            class="brand-dot w-2 h-2 rounded-full bg-white transition"
+        ></button>
+
+        <button
+            onclick="goToBrand(1)"
+            class="brand-dot w-2 h-2 rounded-full bg-gray-600 transition"
+        ></button>
+
+        <button
+            onclick="goToBrand(2)"
+            class="brand-dot w-2 h-2 rounded-full bg-gray-600 transition"
+        ></button>
+
+    </div> -->
+
+    <a href="{% url 'family' %}" class="btn-gold mt-10 inline-block">
+        VIEW MORE
+    </a>
+
+</section>
+
+<!-- ===================== NEWS AND EVENTS ===================== -->
+<section class="bg-[#111111] py-16 border-b border-white/5">
+
+    <!-- Header -->
+    <div class="w-full px-8 md:px-12 lg:px-16 mb-12">
+
+        <div class="flex items-center justify-between">
+
+            <h2
+                class="text-white text-3xl md:text-4xl
+                       font-light tracking-wide"
+            >
+                NEWS AND EVENTS
+            </h2>
+
+            <a
+                href="{% url 'news' %}"
+                class="bg-[#BE9448]
+                       text-white
+                       px-8 py-4
+                       rounded-full
+                       text-sm md:text-base
+                       font-semibold
+                       hover:bg-white
+                       hover:text-black
+                       transition duration-300"
+            >
+                VIEW MORE
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- News Cards -->
+    <div
+        class="w-full px-8 md:px-12 lg:px-16
+               grid grid-cols-1
+               md:grid-cols-2
+               lg:grid-cols-3
+               gap-8"
+    >
+
+
+        <!-- ================= NEWS 1 ================= -->
+        <article class="group">
+
+            <!-- Image -->
+            <div class="overflow-hidden">
+
+                <img
+                    src="{% static 'images/news/news-image-9.jpg' %}"
+                    alt="Nesto Enters Qatar"
+                    class="w-full
+                           aspect-[8/5]
+                           object-cover
+                           group-hover:scale-105
+                           transition-transform
+                           duration-500"
+                >
+
+            </div>
+
+
+            <!-- Title -->
+            <h3
+                class="text-gray-300
+                       text-xl md:text-2xl
+                       leading-relaxed
+                       mt-5
+                       line-clamp-2
+                       group-hover:text-white
+                       transition"
+            >
+                Nesto Enters Qatar with the Opening of Its First Hypermarket ...
+            </h3>
+
+
+            <!-- Date + Read More -->
+            <div class="flex items-center justify-between mt-6">
+
+                <span class="text-gray-400 text-base">
+                    August 19, 2026
+                </span>
+
+                <a
+                    href="{% url 'news' %}"
+                    class="text-red-600
+                           text-base
+                           font-semibold
+                           inline-flex
+                           items-center
+                           gap-3
+                           hover:text-[#BE9448]
+                           transition"
+                >
+                    Read More
+
+                    <span
+                        class="text-2xl
+                               group-hover:translate-x-2
+                               transition-transform"
+                    >
+                        &rarr;
+                    </span>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ================= NEWS 2 ================= -->
+        <article class="group">
+
+            <!-- Image -->
+            <div class="overflow-hidden">
+
+                <img
+                    src="{% static 'images/news/news-image-8.jpg' %}"
+                    alt="Nesto Umm Al Quwain"
+                    class="w-full
+                           aspect-[8/5]
+                           object-cover
+                           group-hover:scale-105
+                           transition-transform
+                           duration-500"
+                >
+
+            </div>
+
+
+            <!-- Title -->
+            <h3
+                class="text-gray-300
+                       text-xl md:text-2xl
+                       leading-relaxed
+                       mt-5
+                       line-clamp-2
+                       group-hover:text-white
+                       transition"
+            >
+                Nesto Umm Al Quwain Reopens with a Fresh New Look
+            </h3>
+
+
+            <!-- Date + Read More -->
+            <div class="flex items-center justify-between mt-6">
+
+                <span class="text-gray-400 text-base">
+                    August 11, 2026
+                </span>
+
+                <a
+                    href="{% url 'news' %}"
+                    class="text-red-600
+                           text-base
+                           font-semibold
+                           inline-flex
+                           items-center
+                           gap-3
+                           hover:text-[#BE9448]
+                           transition"
+                >
+                    Read More
+
+                    <span
+                        class="text-2xl
+                               group-hover:translate-x-2
+                               transition-transform"
+                    >
+                        &rarr;
+                    </span>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ================= NEWS 3 ================= -->
+        <article class="group">
+
+            <!-- Image -->
+            <div class="overflow-hidden">
+
+                <img
+                    src="{% static 'images/news/news-image-7.jpg' %}"
+                    alt="Smart Living Tech Promotion"
+                    class="w-full
+                           aspect-[8/5]
+                           object-cover
+                           group-hover:scale-105
+                           transition-transform
+                           duration-500"
+                >
+
+            </div>
+
+
+            <!-- Title -->
+            <h3
+                class="text-gray-300
+                       text-xl md:text-2xl
+                       leading-relaxed
+                       mt-5
+                       line-clamp-2
+                       group-hover:text-white
+                       transition"
+            >
+                Smart Living Tech Promotion Officially Begins at Nesto...
+            </h3>
+
+
+            <!-- Date + Read More -->
+            <div class="flex items-center justify-between mt-6">
+
+                <span class="text-gray-400 text-base">
+                    August 3, 2026
+                </span>
+
+                <a
+                    href="{% url 'news' %}"
+                    class="text-red-600
+                           text-base
+                           font-semibold
+                           inline-flex
+                           items-center
+                           gap-3
+                           hover:text-[#BE9448]
+                           transition"
+                >
+                    Read More
+
+                    <span
+                        class="text-2xl
+                               group-hover:translate-x-2
+                               transition-transform"
+                    >
+                        &rarr;
+                    </span>
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<script>
+    let currentBrand = 0;
+
+    const brandSlider = document.getElementById("brandSlider");
+    const brandDots = document.querySelectorAll(".brand-dot");
+
+    function updateBrandSlider() {
+
+        brandSlider.style.transform =
+            `translateX(-${currentBrand * 100}%)`;
+
+        brandDots.forEach((dot, index) => {
+
+            if (index === currentBrand) {
+                dot.classList.remove("bg-gray-600");
+                dot.classList.add("bg-white");
+            } else {
+                dot.classList.remove("bg-white");
+                dot.classList.add("bg-gray-600");
+            }
+
+        });
+    }
+
+    function nextBrand() {
+
+        currentBrand++;
+
+        if (currentBrand >= 3) {
+            currentBrand = 0;
+        }
+
+        updateBrandSlider();
+    }
+
+    function previousBrand() {
+
+        currentBrand--;
+
+        if (currentBrand < 0) {
+            currentBrand = 2;
+        }
+
+        updateBrandSlider();
+    }
+
+    function goToBrand(index) {
+
+        currentBrand = index;
+
+        updateBrandSlider();
+    }
+
+    // Automatic slider
+    setInterval(nextBrand, 4000);
+</script>
+
+
+{% endblock %}

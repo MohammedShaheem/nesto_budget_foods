@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@source "../website/templates";
+
+@theme {
+    --color-gold: #BE9448;
+
+    --color-nesto-red: #7a1620;
+    --color-nesto-dark: #161616;
+    --color-nesto-dark2: #1c1c1c;
+
+    --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+}
